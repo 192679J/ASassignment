@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcOsEkaAAAAAC6bf1OIGS2jdTGGBHBZUmZVmchC"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render="></script>
     <style type="text/css">
         .auto-style1 {
             width: 79px;
@@ -51,7 +51,7 @@
         </table>
         <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"/>        <script>
             grecaptcha.ready(function () {
-                grecaptcha.execute('6LcOsEkaAAAAAC6bf1OIGS2jdTGGBHBZUmZVmchC', { action: 'Login' }).then(function (token) {
+                grecaptcha.execute('', { action: 'Login' }).then(function (token) {
                 document.getElementById("g-recaptcha-response").value = token;
                 });
              });

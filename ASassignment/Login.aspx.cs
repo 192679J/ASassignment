@@ -36,7 +36,7 @@ namespace ASassignment
             bool result = true;
             string captchaResponse = Request.Form["g-recaptcha-response"];
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create
-            ("https://www.google.com/recaptcha/api/siteverify?secret=6LcOsEkaAAAAAKp-gpW0Q6_1VbW0-J1PX4r-oACP &response=" + captchaResponse);
+            ("https://www.google.com/recaptcha/api/siteverify?secret= &response=" + captchaResponse);
 
             try
             {
